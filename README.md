@@ -1,5 +1,5 @@
 # RDG
-PRIVATE
+
 Vous trouverez les codes pythons utilisés dans l'étude de la plateforme RDG. Les données ont été obtenues
 via des requêtes faites directement dans the DVP.
 
