@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+from io import StringIO
+
+data = """
+
+# ajouter ici csv 
+"""
+
+# lecture dataframe
+df = pd.read_csv(StringIO(data))
+
+# figure
+plt.figure(figsize=(10, 6))
+plt.bar(df['date'], df['count'], color='green')
+plt.xlabel('Date')
+plt.ylabel('Évolution du nombre de téléchargement')
+plt.title('Nombre de téléchargement par date')
+plt.xticks(rotation=90)
+plt.tight_layout()
+
+#affichage figure avec plt.show
+plt.show()
